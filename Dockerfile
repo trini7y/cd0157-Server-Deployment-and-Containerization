@@ -12,3 +12,4 @@ RUN pip install -r requirements.txt
 
 # Define an entrypoint which will run the main app using the Gunicorn WSGI server.
 ENTRYPOINT ["gunicorn", "-b", ":8080", "main:APP"]
+
